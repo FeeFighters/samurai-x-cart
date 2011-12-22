@@ -1,0 +1,67 @@
+**************************************
+* Samurai Payment Method v0.1.3 *
+*  by  GIS Team *
+*         Submitted 2011/12/20         *
+**************************************
+
+****************
+* Installation *
+****************
+
+
+************
+* Database *
+************
+
+insert line below using phpMyAdmin 
+
+INSERT INTO xcart_ccprocessors (module_name, type, processor, template, param01, param02, param03, param04, param05, param06, param07, param08, param09, disable_ccinfo, background, testmode, is_check, is_refund, c_template, paymentid, cmpi, use_preauth, preauth_expire, has_preauth, capture_min_limit, capture_max_limit) VALUES
+('Samurai Payment Method', 'C', 'cc_samurai.php', 'cc_samurai.tpl', '', '', '', '', '', '', '', '', '', 'N', 'Y', 'Y', '', '', '', 0, '', '', 0, '', '0%', '0%');
+
+
+Language setting for English
+
+INSERT INTO xcart_languages (code, name, value, topic) 
+VALUES ('en', 'lbl_cc_samurai_merchant_key', 'Merchant Key', 'Labels'), 
+('en', 'lbl_cc_samurai_merchant_password', 'Merchant Password', 'Labels'),
+('en', 'lbl_cc_samurai_processor_token', 'Processor Token', 'Labels');
+
+
+
+
+**********
+* Upload *
+**********
+
+Please upload all the files in the respective directories.
+
+
+Step to installation
+
+
+1) Go to admin in your x-cart, selecte the menu settings->payment method
+
+2) Select 'Samurai payment method' from the 'payment gateway' drop down lists then click add
+
+
+Installation complete..
+
+
+*****************
+* Admin settings *
+*****************
+
+1) Select 'Samurai payment method' to configure.
+
+2) Set your Merchant Key, Merchant Password and Processor Token (Sandbox or Production mode)
+
+3) By default the 'Sandbox' mode is activated. you can modify it. 
+
+
+
+********************
+* Trouble Shooting *
+********************
+
+Nothing yet!
+
