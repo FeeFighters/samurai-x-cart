@@ -16,4 +16,5 @@ This plugin includes the Samurai PHP client library, which is contained within t
 payment directory.  
 
 This plugin will be uploaded to the xcart marketplace, but the latest version will always be available at: 
-https://github.com/FeeFighters/samurai-x-cart
+https://github.com/FeeFighters/samurai-x-cart. When used from github please notice that the PHP library
+is incorporated as a git submodule so you must run git submodule init; git submodule update to pull it down.  
