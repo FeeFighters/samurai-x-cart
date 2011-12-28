@@ -1,0 +1,18 @@
+This integration of X-Cart into the Samurai payment gateway uses the Server To Server method of integration.  
+For more information on Server To Server: https://samurai.feefighters.com/developers/php/api-reference#server-to-server-payment-method-api
+
+For more information on Samurai visit: http://samurai.feefighters.com
+For the Samurai documentation visit: https://samurai.feefighters.com/developers
+For customer support visit our chatroom: http://samurai.feefighters.com/chat
+
+To use this plugin you require three account credentials:
+1. merchant_key
+2. merchant_password
+3. processor_token
+
+You can get those credentials at http://samurai.feefighters.com.  To sign up for a test account is free and takes 30 seconds.
+
+This plugin includes the Samurai PHP client library, which is contained within the samurai-client-php directory of the 
+payment directory.  
+
+This plugin will be uploaded to the xcart marketplace, but the latest version will always be available at: 

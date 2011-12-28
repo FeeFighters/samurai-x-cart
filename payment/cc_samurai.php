@@ -47,7 +47,7 @@
 
 if ( !defined('XCART_START') ) { header("Location: ../"); die("Access denied"); }
 
-require_once('samurai-client-php/Samurai.php');
+require_once('samurai-client-php/lib/Samurai.php');
 
 $file_error = "";
 
@@ -136,8 +136,6 @@ foreach($purchase->errors as $context => $errors) {
           $file_error .= $error->description . "\n";
     }
   }
-
-	
 	$bill_output['code'] = 2;
 	$bill_output['billmes'] = $file_error;
 }
